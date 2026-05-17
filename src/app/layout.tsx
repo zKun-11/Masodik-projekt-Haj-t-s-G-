@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+<<<<<<< HEAD
 import Link from 'next/link';
 import './globals.css';
 
@@ -41,6 +42,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         {children}
       </body>
+=======
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'Next.js Starter',
+  description: 'Modern starter kit with Next.js, TypeScript, Tailwind CSS, ESLint and Prettier',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="hu">
+      <body>{children}</body>
+>>>>>>> 01bddbf4c1e9f5ab240400391ca2858120ed6bf4
     </html>
   );
 }
