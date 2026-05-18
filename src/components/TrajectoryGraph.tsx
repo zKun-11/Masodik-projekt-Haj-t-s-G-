@@ -152,7 +152,7 @@ export default function TrajectoryGraph({ result }: TrajectoryGraphProps) {
   const landingSX = result ? (result.range / maxX) * IW : 0;
 
   return (
-    <div className="relative w-full overflow-hidden rounded-3xl border border-purple-500/20 bg-gradient-to-br from-slate-950 via-purple-950/60 to-slate-900 shadow-2xl shadow-purple-900/40">
+    <div className="relative w-full overflow-hidden rounded-3xl border border-purple-500/20 bg-linear-to-br from-slate-950 via-purple-950/60 to-slate-900 shadow-2xl shadow-purple-900/40">
       {/* Háttér ambient glow */}
       <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(ellipse_55%_45%_at_62%_35%,rgba(168,85,247,0.10)_0%,transparent_70%)]" />
       <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(ellipse_40%_35%_at_30%_70%,rgba(56,189,248,0.06)_0%,transparent_60%)]" />
@@ -174,7 +174,7 @@ export default function TrajectoryGraph({ result }: TrajectoryGraphProps) {
       <div className="w-full overflow-x-auto px-1 pb-3">
         <svg
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="w-full min-w-[300px]"
+          className="w-full min-w-75"
           style={{ maxHeight: '340px' }}
           aria-label="Röppálya koordináta-rendszer"
         >

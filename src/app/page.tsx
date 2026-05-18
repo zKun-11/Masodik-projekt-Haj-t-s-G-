@@ -4,7 +4,7 @@ const menuItems = [
   {
     href: '/calc',
     title: 'Hajítás kalkulátor',
-    text: 'Számold ki a dobás távolságát, kezdősebességét vagy a szükséges sebességet.',
+    text: 'Számold ki a dobás távolságát, kezdősebességét vagy a szükséges sebességet a dobáshoz.',
     badge: 'Számolás',
   },
   {
@@ -25,12 +25,12 @@ export default function HomePage() {
 
         <div className="mx-auto max-w-6xl">
           <div className="max-w-4xl">
-            <p className="text-sm font-black uppercase tracking-[0.35em] text-purple-600">Fizika projekt</p>
+            <p className="text-sm font-black uppercase tracking-[0.35em] text-purple-600">Nextjs projekt</p>
             <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-6xl">
-              Hajítás számoló, tiszta UI-val és kevés szenvedéssel.
+              Tárgy hajítás számoló.
             </h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-              Válassz modult, add meg az adatokat, és a program kiszámolja az eredményt. A számolás légellenállás nélkül,
+              Válassz típust, add meg az adatokat, és a program kiszámolja az eredményt. A számolás légellenállás nélkül,
               földfelszíni nehézségi gyorsulással történik.
             </p>
           </div>
@@ -40,14 +40,14 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/75 p-6 shadow-2xl shadow-blue-200/50 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-purple-300/40"
+                className="group relative overflow-hidden rounded-4xl border border-white/80 bg-white/75 p-6 shadow-2xl shadow-blue-200/50 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-purple-300/40"
               >
-                <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-purple-600 via-sky-400 to-blue-600" />
+                <div className="absolute inset-x-0 top-0 h-2 bg-linear-to-r from-purple-600 via-sky-400 to-blue-600" />
                 <div className="mb-6 flex items-center justify-between gap-4">
                   <span className="rounded-full bg-purple-100 px-4 py-2 text-sm font-black text-purple-700 ring-1 ring-purple-200">
                     {item.badge}
                   </span>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-600 to-sky-500 text-2xl font-black text-white shadow-lg shadow-purple-200 transition group-hover:scale-110">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-purple-600 to-sky-500 text-2xl font-black text-white shadow-lg shadow-purple-200 transition group-hover:scale-110">
                     →
                   </span>
                 </div>

@@ -98,7 +98,7 @@ function ResultCard({
     <div
       className={`rounded-3xl border p-5 shadow-lg transition ${
         accent
-          ? 'border-purple-200/70 bg-gradient-to-br from-purple-50 to-sky-50 shadow-purple-100/50'
+          ? 'border-purple-200/70 bg-linear-to-br from-purple-50 to-sky-50 shadow-purple-100/50'
           : 'border-white/80 bg-white/80 shadow-blue-100/40 backdrop-blur'
       }`}
     >
@@ -153,7 +153,7 @@ export default function ThrowCalculator() {
       {/* ══════════════════════════════════════════════════════
           BAL PANEL — Mód-választó + bemeneti mezők
       ══════════════════════════════════════════════════════ */}
-      <div className="flex flex-col gap-5 rounded-[2rem] border border-white/80 bg-white/80 p-5 shadow-2xl shadow-blue-200/50 backdrop-blur-xl sm:p-7">
+      <div className="flex flex-col gap-5 rounded-4xl border border-white/80 bg-white/80 p-5 shadow-2xl shadow-blue-200/50 backdrop-blur-xl sm:p-7">
 
         {/* Fejléc */}
         <div>
@@ -178,7 +178,7 @@ export default function ThrowCalculator() {
               onClick={() => setMode(item.id)}
               className={`rounded-2xl border p-4 text-left transition-all ${
                 mode === item.id
-                  ? 'border-purple-300 bg-gradient-to-r from-purple-600 to-sky-500 text-white shadow-lg shadow-purple-200'
+                  ? 'border-purple-300 bg-linear-to-r from-purple-600 to-sky-500 text-white shadow-lg shadow-purple-200'
                   : 'border-purple-100 bg-white/70 text-slate-950 hover:border-sky-300 hover:bg-sky-50/80'
               }`}
             >
@@ -199,7 +199,7 @@ export default function ThrowCalculator() {
 
           {/* SZÖG — minden módban megjelenik */}
           <NumberInput
-            label="Dobási szög (α)"
+            label="Dobási szög"
             unit="°"
             value={angle}
             min={0.1}
@@ -272,7 +272,7 @@ export default function ThrowCalculator() {
         </div>
 
         {/* Képlet-blokk */}
-        <div className="mt-auto rounded-3xl border border-purple-100 bg-gradient-to-br from-purple-50/80 to-sky-50/60 p-5 text-sm leading-7 text-slate-600">
+        <div className="mt-auto rounded-3xl border border-purple-100 bg-linear-to-br from-purple-50/80 to-sky-50/60 p-5 text-sm leading-7 text-slate-600">
           <p className="mb-2 font-black text-purple-700">Alkalmazott képletek:</p>
           <div className="space-y-1 font-mono text-xs text-slate-700">
             {/* Sebességkomponensek */}
@@ -296,13 +296,12 @@ export default function ThrowCalculator() {
         </div>
       </div>
 
-      {/* ══════════════════════════════════════════════════════
-          JOBB PANEL — Eredmények + animált grafikon
-      ══════════════════════════════════════════════════════ */}
-      <div className="flex flex-col gap-5 rounded-[2rem] border border-white/80 bg-white/80 p-5 shadow-2xl shadow-purple-200/50 backdrop-blur-xl sm:p-7">
+      {/*JOBB PANEL — Eredmények + animált grafikon*/}
+
+      <div className="flex flex-col gap-5 rounded-4xl border border-white/80 bg-white/80 p-5 shadow-2xl shadow-purple-200/50 backdrop-blur-xl sm:p-7">
 
         {/* ── Fő eredménykártya (gradiens hero) ───────────── */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-600 via-violet-600 to-sky-500 p-5 shadow-xl shadow-sky-300/30">
+        <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-purple-600 via-violet-600 to-sky-500 p-5 shadow-xl shadow-sky-300/30">
           {/* Háttér dekoráció */}
           <div className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
           <div className="pointer-events-none absolute -bottom-6 left-4 h-24 w-24 rounded-full bg-purple-300/20 blur-xl" />
