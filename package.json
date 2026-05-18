@@ -1,0 +1,59 @@
+{
+<<<<<<< HEAD
+  "name": "masodik-projekt-hajitas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+=======
+  "name": "nextjs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "next lint",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start"
+>>>>>>> 01bddbf4c1e9f5ab240400391ca2858120ed6bf4
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+<<<<<<< HEAD
+    "@tailwindcss/postcss": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "prettier": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+=======
+    "@vitejs/plugin-react-swc": "latest",
+    "autoprefixer": "latest",
+    "@tailwindcss/postcss": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-tailwindcss": "latest",
+    "lovable-tagger": "latest",
+    "postcss": "latest",
+    "prettier": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+>>>>>>> 01bddbf4c1e9f5ab240400391ca2858120ed6bf4
+  }
+}
