@@ -1,8 +1,5 @@
 module.exports = {
   root: true,
-<<<<<<< HEAD
-  extends: ['next/core-web-vitals', 'prettier'],
-=======
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module'
@@ -20,5 +17,4 @@ module.exports = {
       config: './tailwind.config.ts'
     }
   }
->>>>>>> 01bddbf4c1e9f5ab240400391ca2858120ed6bf4
 };
