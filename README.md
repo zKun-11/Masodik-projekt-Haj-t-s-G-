@@ -1,29 +1,22 @@
-# Második projekt - Hajítás kalkulátor
+# Második projekt 
 
-Next.js + Tailwind CSS projekt egy egyszerű fizikai hajítás kalkulátorral.
+# Hajítás Távolság Kalkulátor
 
-## Indítás
+Egyszerű webes alkalmazás dobások távolságának kiszámítására.  
+A projekt Next.js, TypeScript és Tailwind CSS használatával készült.
 
-```bash
-npm install
-npm run dev
-```
+## Funkciók
 
-Főoldal: `http://localhost:3000`
+Dobási távolság számítása
+Modern, reszponzív felület
+Gyors működés
+Egyszerű használat
 
-Kalkulátor: `http://localhost:3000/calc`
+## Technológiák
 
-## Mit számol?
+Next.js
+TypeScript
+Tailwind CSS
+React
 
-- kezdősebességből dobástávolságot
-- kívánt távolságból szükséges kezdősebességet
-- erőből becsült kezdősebességet és távolságot
-
-Egyszerűsített modell: nincs légellenállás, az indulási és érkezési magasság azonos, g = 9,81 m/s².
-
-## Mappastruktúra
-
-- `src/app/` – Next.js App Router oldalak
-- `src/components/` – újrahasználható UI komponensek
-- `src/lib/` – segédfüggvények, közös logika
-- `src/hooks/` – custom hook-ok
+## Telepítés
