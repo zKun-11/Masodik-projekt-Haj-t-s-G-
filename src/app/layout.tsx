@@ -5,6 +5,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Hajítás kalkulátor',
   description: 'Next.js + Tailwind fizika projekt',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 const navLinks = [
